@@ -1,0 +1,34 @@
+1)flutter create app_name;
+2)flutter run;
+3)create architecture
+    -presentation
+    -domain -> entities,repositories,usecases
+    -data -> source,models,repositories
+    -core 
+    -common 
+4)Create Theme 
+    -app color 
+    -app theme and add to main dart 
+5)create Splash Screen 
+    -ui design
+    - bloc /for scalable project,otherwise use initstate
+6)create navigation seperate in common/helper/navigation
+
+7)Ui design of login/signup
+
+8)create architexture for domain and data
+
+9)for api we set up core networks dio_client
+
+    creating bloc by cubit 
+    -----------------------------
+    1)create two files cubit,state 
+    2)define state 
+    3)create cubit
+
+    -define cubit like class name extends cubit<stateType>{}
+    -create a constructor it take super keyword intial Value
+    -create a future function for delay and check is login or not 
+    -wrap it in main dart using BLoc provider
+    -create property with the BLoc
+    -BlocListener wrap in the page(it take 2 arguments cubit,state)
