@@ -1,4 +1,4 @@
-import 'package:movie_app/domain/auth/entities/movie_entitie.dart';
+import 'package:movie_app/domain/movie/entities/movie_entitie.dart';
 
 abstract class TrendingMovieState {}
 
