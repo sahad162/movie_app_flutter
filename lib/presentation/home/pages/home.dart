@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/common/widgets/appbar/app_bar.dart';
+import 'package:movie_app/core/configs/images/app_images.dart';
+import 'package:movie_app/presentation/home/widgets/trending.dart';
+import 'package:movie_app/presentation/home/widgets/trending_text.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -6,11 +10,29 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       body: Center(
-        child: Container(
-          child: Text("Home Page"),
+      appBar:BasicAppbar(
+        hideBack: true,
+        leading: Padding(padding: 
+        const EdgeInsets.only(left: 10),
+        child: Image.asset(AppImages.splashBackground),
         ),
-      ),
-    );
+        ),
+        body: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 20),
+                child: TrendingText(),
+              ),
+              Trending()
+            ],
+          ),
+        ),
+        
+
+      );
+       
+    
   }
 }

@@ -20,6 +20,15 @@
 
 9)for api we set up core networks dio_client
 
+10)home page ui created
+
+11)create folders architecyre in domain,data 
+
+12)craeate repository,register,service,models,entities,map 
+
+13)data get from source return to repository->convert from json in models->create instance of entity -> map
+
+
     creating bloc by cubit 
     -----------------------------
     1)create two files cubit,state 

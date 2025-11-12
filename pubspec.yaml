@@ -13,13 +13,14 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
-  flutter_bloc: ^8.1.4
+  flutter_bloc: 
   reactive_button: ^0.0.9
-  dartz: ^0.10.1
-  dio: ^5.4.0
-  logger: ^2.1.0
-  get_it: ^7.6.7
-  shared_preferences: ^2.3.2
+  dartz:
+  dio: 
+  logger:
+  get_it: 
+  shared_preferences: 
+  fan_carousel_image_slider: ^1.3.0
 
 dev_dependencies:
   flutter_test:
